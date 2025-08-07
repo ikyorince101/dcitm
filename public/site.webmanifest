@@ -1,0 +1,22 @@
+{
+  "name": "DCITM - DC IT Management",
+  "short_name": "DCITM",
+  "description": "Professional IT services for businesses across DC, Maryland, and Virginia",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1318",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
