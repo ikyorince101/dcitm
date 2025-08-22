@@ -3,7 +3,43 @@ import { Mail, MapPin, Phone, Send } from 'lucide-react';
 const ContactSection = () => {
 
   return (
-    <section id="contact" className="py-20 relative">
+    <section id="contact" className="py-20 relative overflow-hidden">
+      {/* Schema Markup for Contact */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "DCITM - DC IT Management",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "info@dcitm.com",
+                "telephone": "+1-571-586-6665",
+                "availableLanguage": "English",
+                "areaServed": ["US", "Global"]
+              },
+              {
+                "@type": "ContactPoint", 
+                "contactType": "sales",
+                "email": "hello@dcitm.com",
+                "availableLanguage": "English"
+              }
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "8401 Maryland Dr #6575",
+              "addressLocality": "Richmond",
+              "addressRegion": "VA",
+              "postalCode": "23294",
+              "addressCountry": "US",
+              "description": "Serving nationwide and globally"
+            }
+          }
+        })}
+      </script>
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Contact Information */}
@@ -20,13 +56,14 @@ const ContactSection = () => {
 
             {/* Contact Details */}
             <div className="space-y-6">
-              <div className="stagger-animation flex items-center space-x-4 tech-card p-6">
+        <div className="stagger-animation flex items-center space-x-4 tech-card p-6">
                 <div className="p-3 bg-background-light rounded-lg glow-primary">
                   <MapPin className="text-primary" size={24} />
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">Our Location</h3>
-                  <p className="text-muted-foreground">Washington, DC</p>
+          <p className="text-muted-foreground">8401 Maryland Dr #6575</p>
+          <p className="text-muted-foreground">Richmond, VA 23294</p>
                   <p className="text-sm text-muted-foreground">Serving nationwide and globally</p>
                 </div>
               </div>
@@ -53,22 +90,16 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">24/7 Support</h3>
+                  <a href="tel:+15715866665" className="text-primary hover:text-accent transition-colors duration-300">
+                    (571) 586-6665
+                  </a>
                   <p className="text-muted-foreground">Emergency IT support available</p>
                   <p className="text-sm text-muted-foreground">Always here when you need us</p>
                 </div>
               </div>
             </div>
 
-            {/* Quick Email Button */}
-            <div className="stagger-animation">
-              <a 
-                href="mailto:info@dcitm.com" 
-                className="btn-tech w-full flex items-center justify-center space-x-3 text-lg"
-              >
-                <Mail size={20} />
-                <span>Email Us Directly</span>
-              </a>
-            </div>
+            {/* Quick Email Button removed as requested */}
           </div>
 
           {/* Contact Form */}
@@ -156,8 +187,8 @@ const ContactSection = () => {
       </div>
 
       {/* Background Decoration */}
-      <div className="absolute top-1/4 right-0 w-64 h-64 border border-accent/10 rounded-full translate-x-1/2 animate-pulse"></div>
-      <div className="absolute bottom-1/4 left-0 w-48 h-48 border border-primary/10 rounded-full -translate-x-1/2 animate-pulse" style={{ animationDelay: '2s' }}></div>
+      <div className="absolute top-1/4 right-0 w-32 h-32 md:w-64 md:h-64 border border-accent/10 rounded-full animate-pulse opacity-50"></div>
+      <div className="absolute bottom-1/4 left-0 w-24 h-24 md:w-48 md:h-48 border border-primary/10 rounded-full animate-pulse opacity-50" style={{ animationDelay: '2s' }}></div>
     </section>
   );
 };

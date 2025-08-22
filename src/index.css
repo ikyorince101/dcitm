@@ -117,20 +117,33 @@
     @apply border-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
   body {
     @apply bg-background text-foreground font-inter;
     background: var(--gradient-hero);
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
   }
-  
-  html {
-    scroll-behavior: smooth;
+    #lovable-badge {
+    display: none !important;
   }
 }
 
 @layer components {
+  /* Container responsiveness */
+  .container {
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+    max-width: 100%;
+  }
+  
   /* Tech Button Variants */
   .btn-tech {
-    @apply relative px-8 py-4 bg-primary text-primary-foreground rounded-lg font-semibold;
+    @apply relative px-6 sm:px-8 py-3 sm:py-4 bg-primary text-primary-foreground rounded-lg font-semibold;
     @apply transition-all duration-300 hover:shadow-lg;
     background: var(--gradient-primary);
     box-shadow: var(--glow-primary);

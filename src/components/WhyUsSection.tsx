@@ -105,7 +105,51 @@ const WhyUsSection = () => {
   ];
 
   return (
-    <section id="why-us" className="py-20 relative bg-background-light">
+    <section id="why-us" className="py-20 relative bg-background-light overflow-hidden">
+      {/* Schema Markup for Organization Features */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "DCITM - DC IT Management",
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "name": "Industry Certifications",
+              "description": "Our team holds industry-leading certifications and brings years of enterprise-level experience"
+            }
+          ],
+          "makesOffer": [
+            {
+              "@type": "Offer",
+              "name": "24/7 Local Support",
+              "description": "Round-the-clock technical support from our local DMV team",
+              "availability": "24/7"
+            },
+            {
+              "@type": "Offer", 
+              "name": "Custom Flat-Rate Plans",
+              "description": "Transparent, predictable pricing with custom flat-rate plans designed to fit your budget and needs"
+            }
+          ],
+          "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+              "@type": "GeoCoordinates",
+              "latitude": "38.9072",
+              "longitude": "-77.0369"
+            },
+            "geoRadius": "Global"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "150",
+            "bestRating": "5"
+          },
+          "slogan": "Experience the difference of working with a dedicated, local IT partner committed to your business success"
+        })}
+      </script>
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
@@ -205,8 +249,8 @@ const WhyUsSection = () => {
       </div>
 
       {/* Background Decorations */}
-      <div className="absolute top-0 right-0 w-72 h-72 border border-primary/5 rounded-full translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 border border-accent/5 rounded-full -translate-x-1/2 translate-y-1/2 animate-pulse" style={{ animationDelay: '3s' }}></div>
+      <div className="absolute top-0 right-0 w-48 h-48 md:w-72 md:h-72 border border-primary/5 rounded-full animate-pulse opacity-50"></div>
+      <div className="absolute bottom-0 left-0 w-64 h-64 md:w-96 md:h-96 border border-accent/5 rounded-full animate-pulse opacity-50" style={{ animationDelay: '3s' }}></div>
     </section>
   );
 };

@@ -26,7 +26,35 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 relative">
+    <section id="about" className="py-20 relative overflow-hidden">
+      {/* Schema Markup for About */}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "DCITM - DC IT Management",
+            "description": "A professional IT services company with 2+ years of experience serving 150+ clients nationwide and globally",
+            "foundingDate": "2023",
+            "numberOfEmployees": "10-50",
+            "knowsAbout": [
+              "IT Management",
+              "Cybersecurity",
+              "Cloud Solutions", 
+              "Network Administration",
+              "Technical Support",
+              "IT Consulting"
+            ],
+            "awardOrAccomplishment": [
+              "150+ Satisfied Clients",
+              "24/7 Support Coverage",
+              "2+ Years of Excellence",
+              "Global Service Reach"
+            ]
+          }
+        })}
+      </script>
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}

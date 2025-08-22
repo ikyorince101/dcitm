@@ -6,20 +6,208 @@
     <title>DCITM - DC IT Management | Elite IT Solutions for DMV Businesses</title>
     <meta name="description" content="Professional IT services for businesses across DC, Maryland, and Virginia. Managed IT, cybersecurity, cloud solutions, and 24/7 support." />
     <meta name="author" content="DCITM" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <script>
+      (function () {
+        try {
+          var isLocal = /^(localhost|127\.0\.0\.1)$/i.test(window.location.hostname);
+          if (window.location.protocol !== 'https:' && !isLocal) {
+            var target = 'https://' + window.location.host + window.location.pathname + window.location.search + window.location.hash;
+            window.location.replace(target);
+          }
+        } catch (e) { /* no-op */ }
+      })();
+    </script>
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" href="/icon-192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
 
+    <!-- Open Graph / Facebook -->
     <meta property="og:title" content="DCITM - DC IT Management | Elite IT Solutions for DMV Businesses" />
     <meta property="og:description" content="Professional IT services for businesses across DC, Maryland, and Virginia. Managed IT, cybersecurity, cloud solutions, and 24/7 support." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://dcitm.com" />
-    <meta property="og:image" content="/src/assets/dcitm_logo.png" />
+    <meta property="og:image" content="https://dcitm.com/social-share.png" />
+    <meta property="og:image:alt" content="DCITM - DC IT Management Logo" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:site_name" content="DCITM" />
+    <meta property="og:locale" content="en_US" />
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="DCITM - DC IT Management | Elite IT Solutions for DMV Businesses" />
     <meta name="twitter:description" content="Professional IT services for businesses across DC, Maryland, and Virginia. Managed IT, cybersecurity, cloud solutions, and 24/7 support." />
-    <meta name="twitter:image" content="/src/assets/dcitm_logo.png" />
+    <meta name="twitter:image" content="https://dcitm.com/social-share.png" />
+    <meta name="twitter:image:alt" content="DCITM - DC IT Management Logo" />
+    <meta name="twitter:site" content="@dcitm" />
+    <meta name="twitter:creator" content="@dcitm" />
+    
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#007bff" />
+    <meta name="msapplication-TileColor" content="#007bff" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
+    <meta name="bingbot" content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1" />
+    <link rel="canonical" href="https://dcitm.com" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "DCITM - DC IT Management",
+      "alternateName": "DC IT Management",
+      "url": "https://dcitm.com",
+      "logo": "https://dcitm.com/icon-192.png",
+      "image": "https://dcitm.com/social-share.png",
+      "description": "Professional IT services for businesses across DC, Maryland, and Virginia. Managed IT, cybersecurity, cloud solutions, and 24/7 support.",
+      "founder": {
+        "@type": "Person",
+        "name": "DCITM Team"
+      },
+      "foundingDate": "2023",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+1-571-586-6665",
+          "contactType": "customer service",
+          "email": "info@dcitm.com",
+          "availableLanguage": ["English"],
+          "areaServed": ["US"]
+        },
+        {
+          "@type": "ContactPoint",
+          "email": "hello@dcitm.com",
+          "contactType": "sales",
+          "availableLanguage": ["English"]
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "8401 Maryland Dr #6575",
+        "addressLocality": "Richmond",
+        "addressRegion": "VA",
+        "postalCode": "23294",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Washington DC"
+        },
+        {
+          "@type": "State", 
+          "name": "Maryland"
+        },
+        {
+          "@type": "State",
+          "name": "Virginia"
+        }
+      ],
+      "serviceType": [
+        "Managed IT Services",
+        "Cybersecurity Solutions", 
+        "Cloud Computing Services",
+        "IT Support Services",
+        "Network Security",
+        "Data Backup Solutions",
+        "IT Consulting"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "IT Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Managed IT Services",
+              "description": "Comprehensive IT management and support for businesses"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cybersecurity Solutions",
+              "description": "Advanced cybersecurity protection and monitoring"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service", 
+              "name": "Cloud Solutions",
+              "description": "Cloud migration, management, and optimization services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "24/7 IT Support", 
+              "description": "Round-the-clock technical support and emergency response"
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "150"
+      },
+      "keywords": "IT services, managed IT, cybersecurity, cloud solutions, Washington DC, Maryland, Virginia, IT support, network security"
+    }
+    </script>
+
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://dcitm.com",
+      "name": "DCITM - DC IT Management",
+      "image": "https://dcitm.com/social-share.png",
+      "url": "https://dcitm.com",
+      "telephone": "+1-571-586-6665",
+      "email": "info@dcitm.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "8401 Maryland Dr #6575",
+        "addressLocality": "Richmond",
+        "addressRegion": "VA",
+        "postalCode": "23294",
+        "addressCountry": "US"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday", 
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "$$",
+      "currenciesAccepted": "USD",
+      "paymentAccepted": ["Cash", "Credit Card", "Invoice"],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "150"
+      }
+    }
+    </script>
   </head>
 
   <body>

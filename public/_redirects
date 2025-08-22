@@ -1,0 +1,5 @@
+# Force HTTPS
+http://* https://dcitm.com/:splat 301!
+
+# SPA fallback for Vite/React
+/*    /index.html   200

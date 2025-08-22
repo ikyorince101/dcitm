@@ -16,7 +16,7 @@ const Footer = () => {
               />
               <div>
                 <h3 className="text-xl font-bold text-foreground">DCITM</h3>
-                <p className="text-sm text-muted-foreground">IT Management</p>
+                <p className="text-sm text-muted-foreground">DC IT Management</p>
               </div>
             </div>
             <p className="text-muted-foreground">
@@ -57,6 +57,12 @@ const Footer = () => {
                 <Mail size={18} />
                 <span>info@dcitm.com</span>
               </a>
+              <a
+                href="tel:+15715866665"
+                className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors duration-300"
+              >
+                <span>(571) 586-6665</span>
+              </a>
               
               <div className="flex items-center space-x-4 pt-4">
                 <a
@@ -86,15 +92,15 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-muted-foreground text-sm">
-              © 2025 DCITM. All rights reserved.
+              © 2025 DCITM LLC. All rights reserved.
             </p>
             <div className="flex items-center space-x-6 text-sm text-muted-foreground">
-              <a href="#" className="hover:text-primary transition-colors duration-300">
-                Privacy Policy
-              </a>
-              <a href="#" className="hover:text-primary transition-colors duration-300">
+              {/* <a href="#" className="hover:text-primary transition-colors duration-300">
                 Terms of Service
               </a>
+              <a href="#" className="hover:text-primary transition-colors duration-300">
+                Privacy Policy
+              </a> */}
             </div>
           </div>
         </div>
